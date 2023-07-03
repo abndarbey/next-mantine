@@ -19,7 +19,12 @@ export default function DrawerMenu(props: DrawerMenuProps) {
 
   const mainNav = siteConfig.mainNav.map((item: any, index: number) => {
     return (
-      <Link key={index} href={item.href} className={classes.link}>
+      <Link
+        key={index}
+        href={item.href}
+        className={classes.link}
+        onClick={props.closeDrawer}
+      >
         {item.title}
       </Link>
     )
