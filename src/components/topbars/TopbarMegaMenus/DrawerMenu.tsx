@@ -5,6 +5,7 @@ import { topbarStyles } from './styles'
 import { useDisclosure } from '@mantine/hooks'
 import { siteConfig } from '@/config/site'
 import Link from 'next/link'
+import NavActionButtons from './NavActionButtons'
 
 type DrawerMenuProps = {
   links: React.JSX.Element[]
@@ -56,13 +57,7 @@ export default function DrawerMenu(props: DrawerMenuProps) {
         <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
         <Group position="center" grow pb="xl" px="md">
-          <Button variant="default">Log in</Button>
-          <Button
-            variant='gradient'
-            gradient={{from: 'teal', to: 'cyan'}}
-          >
-            Sign up
-          </Button>
+          <NavActionButtons />
         </Group>
       </ScrollArea>
     </Drawer>

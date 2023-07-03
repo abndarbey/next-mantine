@@ -1,6 +1,7 @@
 import { Button, Group } from '@mantine/core'
 import { topbarStyles } from './styles'
 import { useRouter } from 'next/router'
+import { Fragment } from 'react'
 
 export default function NavActionButtons() {
   const { classes } = topbarStyles()
@@ -11,7 +12,7 @@ export default function NavActionButtons() {
   }
   
   return (
-    <Group className={classes.hiddenMobile}>
+    <Fragment>
       <Button
         variant="default"
         onClick={() => handleClick('/login')}
@@ -24,6 +25,6 @@ export default function NavActionButtons() {
       >
         Sign up
       </Button>
-    </Group>
+    </Fragment>
   )
 }

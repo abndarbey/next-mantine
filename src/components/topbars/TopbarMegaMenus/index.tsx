@@ -49,7 +49,9 @@ export default function TopbarMegaMenus() {
             <Logo />
             <NavMenus links={links} />
             <Group>
-              <NavActionButtons />
+              <Group className={classes.hiddenMobile}>
+                <NavActionButtons />
+              </Group>
               <ThemeToggler />
             </Group>
           </Group>
