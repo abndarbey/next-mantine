@@ -1,0 +1,39 @@
+import { Text, Title, TextInput, Button, Image, Container } from '@mantine/core'
+import SectionWrapper from '@/components/wrappers/SectionWrapper'
+import { ctaStyles } from './styles'
+import emailImg from '@/assets/images/email.svg'
+
+type CtaFormProps = {
+  gray?: boolean
+}
+
+export default function CtaForm(props: CtaFormProps) {
+  const { classes } = ctaStyles()
+  
+  return (
+    <SectionWrapper gray={props.gray}>
+      <div className={classes.wrapper}>
+        <div className={classes.body}>
+          <Title className={classes.title}>
+            Drop your email and we will get back to you.
+          </Title>
+
+          <div className={classes.controls}>
+            <TextInput
+              placeholder="Your email"
+              classNames={{ input: classes.input, root: classes.inputWrapper }}
+            />
+            <Button
+              className={classes.control}
+              variant='gradient'
+              gradient={{from: 'teal', to: 'cyan'}}
+            >
+              Submit
+            </Button>
+          </div>
+        </div>
+        <Image src={emailImg.src} className={classes.image} alt="img" />
+      </div>
+    </SectionWrapper>
+  )
+}

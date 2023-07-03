@@ -1,0 +1,27 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        'topbar'
+        'main'
+    ;
+}
+
+.topbar {
+    grid-area: topbar;
+    /* background-color: yellow; */
+}
+
+.main {
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    /* background-color: skyblue; */
+}
