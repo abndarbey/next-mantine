@@ -1,5 +1,4 @@
 import { Container, Text, Button, Group, rem } from '@mantine/core'
-import { GithubIcon } from '@mantine/ds'
 import { heroTitleStyles } from './styles'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 import { useRouter } from 'next/router'
@@ -11,8 +10,8 @@ const description = `
 `
 
 export default function HeroTitle() {
-  const router = useRouter()
   const { classes } = heroTitleStyles()
+  const router = useRouter()
 
   return (
     <div className={classes.wrapper}>
