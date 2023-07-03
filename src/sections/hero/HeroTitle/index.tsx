@@ -11,12 +11,8 @@ const description = `
 `
 
 export default function HeroTitle() {
-  const { classes } = heroTitleStyles()
   const router = useRouter()
-
-  const handleClick = () => {
-    router.push('/contact')
-  }
+  const { classes } = heroTitleStyles()
 
   return (
     <div className={classes.wrapper}>
@@ -41,21 +37,19 @@ export default function HeroTitle() {
             className={classes.control}
             variant="gradient"
             gradient={{ from: 'teal', to: 'cyan' }}
-            rightIcon={<IconArrowNarrowRight />}
-            onClick={handleClick}
+            onClick={() => router.push('/search')}
           >
-            Get started
+            See Our Solutions
           </Button>
 
           <Button
-            component="a"
-            href="https://github.com/mantinedev/mantine"
             size="xl"
             variant="default"
             className={classes.control}
-            leftIcon={<GithubIcon size={20} />}
+            rightIcon={<IconArrowNarrowRight />}
+            onClick={() => router.push('/contact')}
           >
-            GitHub
+            Get Started
           </Button>
         </Group>
       </Container>

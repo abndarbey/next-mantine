@@ -69,7 +69,11 @@ export const heroFeatureStyles = createStyles((theme) => ({
   feature: {
     position: 'relative',
     paddingTop: theme.spacing.xl,
-    paddingLeft: theme.spacing.xl,
+
+    [theme.fn.smallerThan('sm')]: {
+      paddingLeft: theme.spacing.md,
+      paddingRight: theme.spacing.md,
+    },
   },
 
   overlay: {

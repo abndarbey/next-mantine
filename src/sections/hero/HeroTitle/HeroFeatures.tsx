@@ -13,7 +13,7 @@ function Feature({ icon: Icon, title, description, className, ...others }: Featu
 
   return (
     <div className={cx(classes.feature, className)} {...others}>
-      <div className={classes.overlay} />
+      {/* <div className={classes.overlay} /> */}
 
       <div className={classes.content}>
         <Icon size={rem(38)} className={classes.icon} stroke={1.5} />
@@ -32,15 +32,13 @@ export default function HeroFeatures() {
   const items = mockdata.map((item) => <Feature {...item} key={item.title} />)
 
   return (
-    // <Container mt={50} mb={70} size="xl">
-      <SimpleGrid
-        cols={3}
-        mt={30} mb={60}
-        breakpoints={[{ maxWidth: 'sm', cols: 1 }]}
-      >
-        {items}
-      </SimpleGrid>
-    // </Container>
+    <SimpleGrid
+      cols={3}
+      mt={30} mb={60}
+      breakpoints={[{ maxWidth: 'sm', cols: 1 }]}
+    >
+      {items}
+    </SimpleGrid>
   )
 }
 
