@@ -1,5 +1,5 @@
-import fileSearchImg from 'assets/images/file-search.svg'
-import { articlesData } from 'data/caseStudiesData/articlesData'
+import fileSearchImg from '@/assets/images/file-search.svg'
+import { articlesData } from '@/data/caseStudiesData/articlesData'
 
 export const caseStudiesHero = {
     title: `Engineering Case Studies`,

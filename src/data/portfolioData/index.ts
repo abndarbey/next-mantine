@@ -1,4 +1,4 @@
-import portfolioImg from 'assets/images/portfolio.svg'
+import portfolioImg from '@/assets/images/portfolio.svg'
 
 export const portfolioHero = {
     title: `Confidence to Show Our Work`,

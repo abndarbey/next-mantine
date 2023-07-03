@@ -33,7 +33,7 @@ export default function HeroIntro(props: HeroIntroProps) {
   ))
 
   return (
-    <SectionWrapper hero>
+    <SectionWrapper>
       <div className={classes.inner}>
           <Dots className={classes.dots} style={{ left: 0, top: 0 }} />
           <Dots className={classes.dots} style={{ left: 60, top: 0 }} />

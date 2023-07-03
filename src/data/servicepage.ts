@@ -1,5 +1,13 @@
-import image from 'assets/images/hero-banner.svg'
-import { IconGauge, IconUser, IconCookie, IconCode, IconAnalyze, IconFileAnalytics, IconDeviceDesktopAnalytics, IconUsers, IconTestPipe, IconBug, IconBugOff, IconTriangleInverted, IconReportAnalytics, IconDeviceAnalytics, IconMessageReport, IconActivity } from '@tabler/icons'
+import image from '@/assets/images/hero-banner.svg'
+import {
+    IconCode,
+    IconDeviceDesktopAnalytics,
+    IconUsers,
+    IconBugOff,
+    IconDeviceAnalytics,
+    IconActivity
+}
+from '@tabler/icons-react'
 
 export const serviceHero = {
     title: `Services`,

@@ -13,7 +13,6 @@ import {
 	rem,
 } from '@mantine/core';
 import { IconArrowRight, IconArrowUp } from '@tabler/icons-react';
-import { BalanceChart } from './BalanceChart';
 
 const useStyle = createStyles(theme => ({
 	section: {

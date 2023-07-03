@@ -26,7 +26,7 @@ import {
     IconCodeCircle2,
     IconShieldCheck,
     IconTools,
-} from '@tabler/icons'
+} from '@tabler/icons-react'
 
 
 export const engineeringService = {

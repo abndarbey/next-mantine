@@ -1,4 +1,4 @@
-import { ArticleCardProps } from "types/types"
+import { ArticleCardProps } from "@/types/types"
 
 export const articlesData: ArticleCardProps[] = [
     {

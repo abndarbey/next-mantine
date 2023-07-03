@@ -1,4 +1,4 @@
-import newsletterImg from 'assets/images/newsletter.svg'
+import newsletterImg from '@/assets/images/newsletter.svg'
 
 export const contactHero = {
     title: `Contact Us`,

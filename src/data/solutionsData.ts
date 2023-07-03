@@ -1,5 +1,5 @@
-import { IconLeaf, IconLine } from '@tabler/icons'
-import image from 'assets/images/world.svg'
+import { IconLeaf, IconLine } from '@tabler/icons-react'
+import image from '@/assets/images/world.svg'
 
 export const solutionsHero = {
     title: `Solutions`,

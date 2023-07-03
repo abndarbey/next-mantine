@@ -2,8 +2,8 @@ import { createStyles } from "@mantine/core"
 
 export const featuresGridStyles = createStyles((theme) => ({
     wrapper: {
-        paddingTop: theme.spacing.xl * 4,
-        paddingBottom: theme.spacing.xl * 4,
+        paddingTop: `calc(${theme.spacing.xl} * 4)`,
+        paddingBottom: `calc(${theme.spacing.xl} * 4)`,
     },
 
     title: {

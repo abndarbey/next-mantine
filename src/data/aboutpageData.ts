@@ -1,4 +1,4 @@
-import aboutHeroImg from 'assets/images/firmware.svg'
+import aboutHeroImg from '@/assets/images/firmware.svg'
 
 export const aboutHero = {
     title: `About Us`,
