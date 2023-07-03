@@ -44,7 +44,6 @@ export default function FeaturesColumn(props: FeaturesColumnProps) {
               variant="gradient"
               gradient={{ deg: 133, from: 'teal', to: 'cyan' }}
               size="lg"
-              radius="md"
               mt="xl"
           >
               Get started
