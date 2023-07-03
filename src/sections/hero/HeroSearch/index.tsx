@@ -1,7 +1,8 @@
-import { Container, Button, Input, Text } from '@mantine/core'
+import { Container, Button, Input, Text, Box } from '@mantine/core'
 import { heroSearchStyles } from './styles'
 import SearchBar from '@/components/SearchBar'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import HeroFeatures from '../HeroFeatures'
 
 export default function HeroSearch() {
   const { classes } = heroSearchStyles()
@@ -22,6 +23,9 @@ export default function HeroSearch() {
         </h1>
         
         <SearchBar size='xl' />
+        <Box pt={30}>
+          <HeroFeatures />
+        </Box>
       </Container>
     </div>
   )

@@ -3,7 +3,7 @@ import { GithubIcon } from '@mantine/ds'
 import { heroTitleStyles } from './styles'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 import { useRouter } from 'next/router'
-import HeroFeatures from './HeroFeatures'
+import HeroFeatures from '@/sections/hero/HeroFeatures'
 
 const description = `
   Powered by Ethereum Blockchain, the Nexport Platform provides every entity involved

@@ -1,5 +1,5 @@
-import { Text, SimpleGrid, Container, rem } from '@mantine/core'
-import { IconTruck, IconCertificate, IconCoin, IconLink, IconFile, IconFileAnalytics, IconTrack, IconLocation } from '@tabler/icons-react'
+import { Text, SimpleGrid, rem } from '@mantine/core'
+import { IconLink, IconFileAnalytics, IconLocation } from '@tabler/icons-react'
 import { heroFeatureStyles } from './styles'
 
 interface FeatureProps extends React.ComponentPropsWithoutRef<'div'> {
