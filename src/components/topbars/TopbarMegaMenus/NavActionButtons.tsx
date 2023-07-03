@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import { Fragment } from 'react'
 
 export default function NavActionButtons() {
-  const { classes } = topbarStyles()
   const router = useRouter()
   
   const handleClick = (href: string) => {
