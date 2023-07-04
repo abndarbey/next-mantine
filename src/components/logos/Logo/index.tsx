@@ -21,7 +21,7 @@ export default function Logo(props: LogoProps) {
   const { classes } = logoStyles()
   const { colorScheme } = useMantineColorScheme()
 
-  const defaultWidth: number = 120
+  const defaultWidth: number = 100
 
   let logoImage: StaticImageData = colorScheme === 'dark' ? darkLogo : lightLogo
   if (props.light) {
