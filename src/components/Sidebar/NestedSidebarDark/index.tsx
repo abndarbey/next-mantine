@@ -1,13 +1,12 @@
-import { Navbar, Group, Code, ScrollArea } from '@mantine/core'
+import { Navbar, Group, Code, ScrollArea, ActionIcon } from '@mantine/core'
 import { LinksGroup } from './NavbarLinksGroup'
 import { nestedSidebarStyles } from './styles'
 import { menuData } from './menuData'
-import { IconLogout, IconSwitchHorizontal } from '@tabler/icons-react'
+import { IconChevronsLeft, IconLogout, IconSwitchHorizontal } from '@tabler/icons-react'
 import Logo from '@/components/logos/Logo'
 
 type NestedSidebarDarkProps = {
   width: number
-  height?: string
   toggleSidbar: () => void
 }
 
@@ -16,11 +15,13 @@ export default function NestedSidebarDark(props: NestedSidebarDarkProps) {
   const links = menuData.map((item) => <LinksGroup {...item} key={item.label} />)
 
   return (
-    <Navbar width={{ sm: props.width }} height={props.height} p="md" className={classes.navbar}>
+    <Navbar width={{ sm: props.width }} p="md" className={classes.navbar}>
       <Navbar.Section className={classes.header}>
-        <Group position="center">
-          <Logo light />
-          {/* <Code sx={{ fontWeight: 700 }}>v3.1.2</Code> */}
+        <Group position="apart" grow>
+            <Logo light />
+            <ActionIcon onClick={props.toggleSidbar} size={27}>
+                <IconChevronsLeft size={20} stroke={1.5} />
+            </ActionIcon>
         </Group>
       </Navbar.Section>
 
