@@ -1,5 +1,9 @@
 import { createStyles, rem } from "@mantine/styles"
 
+const bottomBorderHeight: number = 3
+const activeLinkPaddingTop: number = 2
+const activeLinkMarginBottom: number = -1
+
 export const topbarStyles = createStyles((theme) => ({
   inner: {
     height: '100%',
@@ -25,8 +29,9 @@ export const topbarStyles = createStyles((theme) => ({
 
     ...theme.fn.hover({
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-      borderBottom: `${rem(4)} solid ${theme.primaryColor}`,
-      marginBottom: -4,
+      borderBottom: `${rem(bottomBorderHeight)} solid ${theme.primaryColor}`,
+      paddingTop: activeLinkPaddingTop,
+      marginBottom: activeLinkMarginBottom,
     }),
   },
 
@@ -40,8 +45,9 @@ export const topbarStyles = createStyles((theme) => ({
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     fontWeight: 500,
     fontSize: theme.fontSizes.sm,
-    borderBottom: `${rem(4)} solid ${theme.primaryColor}`,
-    marginBottom: -4,
+    borderBottom: `${rem(bottomBorderHeight)} solid ${theme.primaryColor}`,
+    paddingTop: activeLinkPaddingTop,
+    marginBottom: activeLinkMarginBottom,
 
     [theme.fn.smallerThan('sm')]: {
       height: rem(42),
