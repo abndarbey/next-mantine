@@ -3,6 +3,7 @@ import { heroTitleStyles } from './styles'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 import { useRouter } from 'next/router'
 import HeroFeatures from '@/sections/hero/HeroFeatures'
+import Link from 'next/link'
 
 const description = `
   Powered by Ethereum Blockchain, the Nexport Platform provides every entity involved
@@ -32,21 +33,21 @@ export default function HeroTitle() {
         
         <Group className={classes.controls}>
           <Button
-            size="xl"
+            component={Link} href={'/search'}
             className={classes.control}
+            size="xl"
             variant="gradient"
             gradient={{ from: 'teal', to: 'cyan' }}
-            onClick={() => router.push('/search')}
+            rightIcon={<IconArrowNarrowRight />}
           >
-            See Our Solutions
+            Learn More
           </Button>
 
           <Button
+            component={Link} href={'/contact'}   
+            className={classes.control}
             size="xl"
             variant="default"
-            className={classes.control}
-            rightIcon={<IconArrowNarrowRight />}
-            onClick={() => router.push('/contact')}
           >
             Get Started
           </Button>
