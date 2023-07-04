@@ -7,6 +7,7 @@ import Logo from '@/components/logos/Logo'
 
 type NestedSidebarDarkProps = {
   width: number
+  height?: string
   toggleSidbar: () => void
 }
 
@@ -15,7 +16,7 @@ export default function NestedSidebarDark(props: NestedSidebarDarkProps) {
   const links = menuData.map((item) => <LinksGroup {...item} key={item.label} />)
 
   return (
-    <Navbar width={{ sm: props.width }} p="md" className={classes.navbar}>
+    <Navbar width={{ sm: props.width }} height={props.height} p="md" className={classes.navbar}>
       <Navbar.Section className={classes.header}>
         <Group position="center">
           <Logo light />

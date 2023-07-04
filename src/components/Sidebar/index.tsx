@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import NestedSidebar from './NestedSidebar'
 import NestedSidebarDark from './NestedSidebarDark'
 
 type SidebarProps = {
   width: number
+  height?: string
 }
 
 export default function Sidebar(props: SidebarProps) {
@@ -13,6 +13,9 @@ export default function Sidebar(props: SidebarProps) {
   }
   
   return (
-    <NestedSidebarDark width={props.width} toggleSidbar={toggleSidbar} />
+    <NestedSidebarDark
+      width={props.width}
+      height={props.height}
+      toggleSidbar={toggleSidbar} />
   )
 }

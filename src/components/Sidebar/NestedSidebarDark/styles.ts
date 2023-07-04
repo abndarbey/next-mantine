@@ -4,8 +4,6 @@ export const nestedSidebarStyles = createStyles((theme) => ({
   navbar: {
     backgroundColor: theme.colors.dark[6],
     paddingBottom: 0,
-    width: '100%',
-    height: '100vh',
   },
 
   header: {

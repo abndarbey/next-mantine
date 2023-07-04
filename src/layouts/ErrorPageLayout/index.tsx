@@ -1,20 +1,14 @@
-import styles from './styles.module.css'
-import { ReactNode } from 'react'
-import GenericTopbar from '@/components/topbars/GenericTopbar'
+import { AppShell } from "@mantine/core";
+import { LayoutProps } from "../layoutProps";
+import GenericTopbar from "@/components/topbars/GenericTopbar";
 
-type ErrorPageLayoutProps = {
-  children: ReactNode
-}
-
-export default function ErrorPageLayout(props: ErrorPageLayoutProps) {
+export default function ErrorPageLayout(props: LayoutProps) {
   return (
-    <>
-      <nav className={styles.topbar}>
-        <GenericTopbar />
-      </nav>
-      <main className={styles.content}>
-        {props.children}
-      </main>
-    </>
+    <AppShell
+      padding={0}
+      header={<GenericTopbar />}
+    >
+      {props.children}
+    </AppShell>
   )
 }

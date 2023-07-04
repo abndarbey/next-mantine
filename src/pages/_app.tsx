@@ -3,10 +3,12 @@ import GlobalTheme from '@/styles/GlobalTheme'
 import type { AppProps } from 'next/app'
 import { ReactElement, ReactNode } from 'react'
 import { NextPage } from 'next'
-import LandingPageLayout from '@/layouts/LandingPageLayout'
-import ErrorPageLayout from '@/layouts/ErrorPageLayout'
-import AdminPageLayout from '@/layouts/AdminPageLayout'
-import AuthPageLayout from '@/layouts/AuthPageLayout'
+import {
+  LandingPageLayout,
+  AdminPageLayout,
+  AuthPageLayout,
+  ErrorPageLayout,
+} from '@/layouts'
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getAuthLayout?: (page: ReactElement) => ReactNode
