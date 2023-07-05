@@ -41,7 +41,7 @@ export default function HeroTitle() {
             gradient={{ from: 'teal', to: 'cyan' }}
             rightIcon={<IconArrowNarrowRight />}
           >
-            Learn More
+            Explore More
           </Button>
 
           <Button

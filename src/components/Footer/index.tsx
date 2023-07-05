@@ -51,13 +51,13 @@ export default function Footer() {
         <Copyright />
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" id='twitter-icon-footer' aria-label='Twitter'>
             <IconBrandTwitter size="1.05rem" stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" id='youtube-icon-footer' aria-label='Youtube'>
             <IconBrandYoutube size="1.05rem" stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg">
+          <ActionIcon size="lg" id='instagram-icon-footer' aria-label='Instagram'>
             <IconBrandInstagram size="1.05rem" stroke={1.5} />
           </ActionIcon>
         </Group>

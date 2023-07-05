@@ -45,7 +45,13 @@ export default function TopbarMegaMenus() {
       <Header height={60} px="md">
         <Container size="xl" px="md" className={classes.inner}>
           <Group position="apart" sx={{ height: '100%' }}>
-            <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
+            <Burger
+              opened={drawerOpened}
+              onClick={toggleDrawer}
+              className={classes.hiddenDesktop}
+              id='burger-button'
+              aria-label='Burger Button'
+            />
             <Logo />
             <NavMenus links={links} />
             <Group>
