@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import NestedSidebarDark from './NestedSidebarDark'
+import NestedSidebar from './NestedSidebar'
 
 type SidebarProps = {
   width: number

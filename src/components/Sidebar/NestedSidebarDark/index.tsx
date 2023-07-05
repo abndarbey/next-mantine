@@ -17,12 +17,12 @@ export default function NestedSidebarDark(props: NestedSidebarDarkProps) {
   return (
     <Navbar width={{ sm: props.width }} p="md" className={classes.navbar}>
       <Navbar.Section className={classes.header}>
-          <Group position="apart">
-            <Logo light />
-            <ActionIcon onClick={props.toggleSidbar} size={27} className={classes.actionICon}>
-              <IconChevronsLeft size={20} stroke={1.5} />
-            </ActionIcon>
-          </Group>
+        <Group position="apart">
+          <Logo light />
+          <ActionIcon onClick={props.toggleSidbar} size={27} className={classes.actionICon}>
+            <IconChevronsLeft size={20} stroke={1.5} />
+          </ActionIcon>
+        </Group>
       </Navbar.Section>
 
       <Navbar.Section grow className={classes.links} component={ScrollArea}>

@@ -8,8 +8,8 @@ export const nestedSidebarStyles = createStyles((theme) => ({
   },
 
   header: {
-    padding: `calc(${theme.spacing.md} * 0.65)`,
-    marginBottom: `calc(${theme.spacing.md} * -1)`,
+    paddingBottom: theme.spacing.md,
+    marginBottom: `calc(${theme.spacing.md}  * 1.5)`,
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
     borderBottom: `${rem(1)} solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]

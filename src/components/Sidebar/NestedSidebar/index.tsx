@@ -1,9 +1,9 @@
-import { Navbar, Group, Code, ScrollArea } from '@mantine/core'
+import { Navbar, Group, Code, ScrollArea, ActionIcon } from '@mantine/core'
 import { LinksGroup } from './NavbarLinksGroup'
 import Logo from '@/components/logos/Logo'
 import { nestedSidebarStyles } from './styles'
 import { menuData } from './menuData'
-import { IconLogout, IconSwitchHorizontal } from '@tabler/icons-react'
+import { IconChevronsLeft, IconLogout, IconSwitchHorizontal } from '@tabler/icons-react'
 
 type NestedSidebarProps = {
   width: number
@@ -17,9 +17,11 @@ export default function NestedSidebar(props: NestedSidebarProps) {
   return (
     <Navbar width={{ sm: props.width }} p="md" className={classes.navbar}>
       <Navbar.Section className={classes.header}>
-        <Group position="center">
+        <Group position="apart">
           <Logo />
-          {/* <Code sx={{ fontWeight: 700 }}>v3.1.2</Code> */}
+          <ActionIcon onClick={props.toggleSidbar} size={27}>
+            <IconChevronsLeft size={20} stroke={1.5} />
+          </ActionIcon>
         </Group>
       </Navbar.Section>
 
