@@ -2,19 +2,19 @@ import { LayoutProps } from '../layoutProps'
 import { AppShell } from '@mantine/core'
 import Sidebar from '@/components/Sidebar'
 import Appbar from '@/components/topbars/Appbar'
-import ApplicationWrapper from '@/components/wrappers/ApplicationWrapper'
 
 export default function AdminPageLayout(props: LayoutProps) {
   return (
     <AppShell
-      padding={0}
+      padding={20}
       layout='alt'
       navbar={<Sidebar width={250} />}
       header={<Appbar height={60} />}
+      styles={(theme) => ({
+        main: { backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[1] },
+      })}
     >
-      <ApplicationWrapper>
-        {props.children}
-      </ApplicationWrapper>
+      {props.children}
     </AppShell>
   )
 }
