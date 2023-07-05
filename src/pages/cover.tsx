@@ -1,5 +1,7 @@
+import dynamic from 'next/dynamic'
 import NextHead from '@/components/NextHead'
-import HeroBullets from '@/sections/hero/HeroBullets'
+
+const HeroBullets = dynamic(() => import('@/sections/hero/HeroBullets'))
 
 export default function CoverPage() {
   return (

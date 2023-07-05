@@ -1,15 +1,17 @@
+import dynamic from 'next/dynamic'
 import NextHead from '@/components/NextHead'
-import HeroTitle from '@/sections/hero/HeroTitle'
-import FeatureCards from '@/sections/features/FeatureCards'
-import FeaturesGrid from '@/sections/features/FeaturesGrid'
-import CtaForm from '@/sections/cta/CtaForm'
-import FeaturesColumn from '@/sections/features/FeaturesColumn'
-import FeaturesImage from '@/sections/features/FeaturesImage'
-import FeaturesTabs from '@/sections/features/FeaturesTabs'
-import FaqColumn from '@/sections/faqs/FaqColumn'
-import HighlightCards from '@/sections/highlights/HighlightCards'
-import FeaturesPaperGrid from '@/sections/features/FeaturesPaperGrid'
-import Seperator from '@/components/Seperator'
+
+const HeroTitle = dynamic(() => import('@/sections/hero/HeroTitle'))
+const FeatureCards = dynamic(() => import('@/sections/features/FeatureCards'))
+const FeaturesGrid = dynamic(() => import('@/sections/features/FeaturesGrid'))
+const FeaturesColumn = dynamic(() => import('@/sections/features/FeaturesColumn'))
+const FeaturesImage = dynamic(() => import('@/sections/features/FeaturesImage'))
+const FeaturesTabs = dynamic(() => import('@/sections/features/FeaturesTabs'))
+const FaqColumn = dynamic(() => import('@/sections/faqs/FaqColumn'))
+const FeaturesPaperGrid = dynamic(() => import('@/sections/features/FeaturesPaperGrid'))
+const CtaForm = dynamic(() => import('@/sections/cta/CtaForm'))
+const Seperator = dynamic(() => import('@/components/Seperator'))
+
 
 import {
   homeHero,

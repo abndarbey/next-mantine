@@ -1,6 +1,8 @@
-import NextHead from '@/components/NextHead'
-import Login from '@/modules/auth/Login'
 import { ReactElement } from 'react'
+import dynamic from 'next/dynamic'
+import NextHead from '@/components/NextHead'
+
+const Login = dynamic(() => import('@/modules/auth/Login'))
 
 export default function LoginPage() {
   return (

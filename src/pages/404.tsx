@@ -1,6 +1,9 @@
 import { Fragment, ReactElement } from 'react'
-import ErrorPage, { ErrorPageProps } from '@/sections/ErrorPage'
+import dynamic from 'next/dynamic'
 import NextHead from '@/components/NextHead'
+import { ErrorPageProps } from '@/sections/ErrorPage'
+
+const ErrorPage = dynamic(() => import('@/sections/ErrorPage'))
 
 export default function Error404() {
   return (

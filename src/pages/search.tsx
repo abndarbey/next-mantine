@@ -1,11 +1,13 @@
+import dynamic from 'next/dynamic'
 import NextHead from '@/components/NextHead'
-import HeroSearch from '@/sections/hero/HeroSearch'
-import FeaturesImage from '@/sections/features/FeaturesImage'
-import FeaturesTabs from '@/sections/features/FeaturesTabs'
-import FeaturesPaperGrid from '@/sections/features/FeaturesPaperGrid'
-import FaqColumn from '@/sections/faqs/FaqColumn'
-import CtaForm from '@/sections/cta/CtaForm'
-import FeaturesColumn from '@/sections/features/FeaturesColumn'
+
+const HeroSearch = dynamic(() => import('@/sections/hero/HeroSearch'))
+const FeaturesColumn = dynamic(() => import('@/sections/features/FeaturesColumn'))
+const FeaturesImage = dynamic(() => import('@/sections/features/FeaturesImage'))
+const FeaturesTabs = dynamic(() => import('@/sections/features/FeaturesTabs'))
+const FaqColumn = dynamic(() => import('@/sections/faqs/FaqColumn'))
+const FeaturesPaperGrid = dynamic(() => import('@/sections/features/FeaturesPaperGrid'))
+const CtaForm = dynamic(() => import('@/sections/cta/CtaForm'))
 
 export default function SearchPage() {
   return (
