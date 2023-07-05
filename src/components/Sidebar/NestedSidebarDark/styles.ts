@@ -7,10 +7,16 @@ export const nestedSidebarStyles = createStyles((theme) => ({
   },
 
   header: {
-    padding: `calc(${theme.spacing.md} * 0.65)`,
-    marginBottom: `calc(${theme.spacing.md} * -1)`,
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    borderBottom: `${rem(1)} solid ${theme.colors.dark[4]}`,
+    paddingBottom: theme.spacing.md,
+    marginBottom: `calc(${theme.spacing.md}  * 1.5)`,
+    borderBottom: `1px solid ${theme.colors.dark[4]}`,
+  },
+
+  actionICon: {
+    color: theme.colors.dark[0],
+    '&:hover': {
+      color: theme.white,
+    },
   },
 
   links: {
