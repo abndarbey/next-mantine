@@ -34,6 +34,7 @@ export default function HeroTitle() {
         <Group className={classes.controls}>
           <Button
             component={Link} href={'/search'}
+            aria-label='Search'
             className={classes.control}
             size="xl"
             variant="gradient"
@@ -44,7 +45,8 @@ export default function HeroTitle() {
           </Button>
 
           <Button
-            component={Link} href={'/contact'}   
+            component={Link} href={'/contact'} 
+            aria-label='Contact'  
             className={classes.control}
             size="xl"
             variant="default"
