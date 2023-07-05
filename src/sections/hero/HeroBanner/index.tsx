@@ -13,7 +13,7 @@ import {
   rem,
 } from '@mantine/core'
 import { useWindowScroll } from '@mantine/hooks'
-import data from './data'
+import { data } from './data'
 import useStyles from './styles'
 
 export default function HeroBanner() {

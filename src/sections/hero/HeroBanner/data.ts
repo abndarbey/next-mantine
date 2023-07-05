@@ -1,6 +1,6 @@
-import { IconLicense, IconMoonStars, IconFlame } from '@tabler/icons-react';
+import { IconLicense, IconMoonStars, IconFlame } from '@tabler/icons-react'
 
-export default [
+export const data = [
   {
     icon: IconFlame,
     title: 'Flexible',
@@ -21,4 +21,4 @@ export default [
     description:
       'Free, open source, community-driven, MIT license. Use anywhere, including commercial projects.',
   },
-];
+]
