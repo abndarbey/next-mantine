@@ -1,6 +1,5 @@
-import { Box, Button, Center, Collapse, Divider, Drawer, Group, ScrollArea, UnstyledButton, rem } from '@mantine/core'
+import { Box, Center, Collapse, Divider, Drawer, Group, ScrollArea, UnstyledButton, rem } from '@mantine/core'
 import { IconChevronDown } from '@tabler/icons-react'
-import React from 'react'
 import { topbarStyles } from './styles'
 import { useDisclosure } from '@mantine/hooks'
 import { siteConfig } from '@/config/site'
@@ -36,7 +35,7 @@ export default function DrawerMenu(props: DrawerMenuProps) {
       onClose={props.closeDrawer}
       size="100%"
       padding="md"
-      title="Navigation"
+      title="Nexport"
       className={classes.hiddenDesktop}
       zIndex={1000000}
     >
@@ -52,12 +51,6 @@ export default function DrawerMenu(props: DrawerMenuProps) {
           </Center>
         </UnstyledButton>
         <Collapse in={linksOpened}>{props.links}</Collapse>
-        <a href="#" className={classes.link}>
-          Learn
-        </a>
-        <a href="#" className={classes.link}>
-          Academy
-        </a>
 
         <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
 
