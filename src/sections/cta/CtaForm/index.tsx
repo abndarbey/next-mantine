@@ -1,7 +1,9 @@
-import { Text, Title, TextInput, Button, Image, Container } from '@mantine/core'
+import { Title, TextInput, Button } from '@mantine/core'
+import Image from 'next/image'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import { ctaStyles } from './styles'
 import emailImg from '@/assets/images/email.svg'
+import NextImage from '@/components/NextImage'
 
 type CtaFormProps = {
   gray?: boolean
@@ -32,7 +34,7 @@ export default function CtaForm(props: CtaFormProps) {
             </Button>
           </div>
         </div>
-        <Image src={emailImg.src} className={classes.image} alt="img" />
+        <NextImage src={emailImg.src} className={classes.image} alt="img" />
       </div>
     </SectionWrapper>
   )

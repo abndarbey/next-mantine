@@ -1,10 +1,12 @@
-import { AspectRatio, Button, Image, Paper, SimpleGrid, Text } from '@mantine/core'
+import { AspectRatio, Button, Paper, SimpleGrid, Text } from '@mantine/core'
+import Image from 'next/image'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 import SectionHeader from '@/components/SectionHeader'
 import HighlightSectionWrapper from '@/components/wrappers/HighlightSectionWrapper'
 import { mockdata } from './data'
 import { useStyles } from './styles'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
+import NextImage from '@/components/NextImage'
 
 export default function HighlightCardsGrid() {
   const { classes } = useStyles()
@@ -13,7 +15,7 @@ export default function HighlightCardsGrid() {
     <div key={index}>
       <Paper key={article.title} radius="xs" component="a" href="#" className={classes.card}>
         <AspectRatio ratio={1920 / 1080}>
-          <Image src={article.image} alt='img' />
+          <NextImage src={article.image} alt='img' />
         </AspectRatio>
       </Paper>
       <Text size="xs" transform="uppercase" weight={700} mt="md">

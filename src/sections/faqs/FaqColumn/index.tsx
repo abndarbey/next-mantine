@@ -1,7 +1,9 @@
-import { Image, Accordion, Grid, Col, Title } from '@mantine/core'
-import SectionWrapper from '@/components/wrappers/SectionWrapper';
+import { Accordion, Grid, Col, Title } from '@mantine/core'
+import Image from 'next/image'
+import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import { faqColumnStyles } from './styles'
 import image from '@/assets/images/faqs.svg'
+import NextImage from '@/components/NextImage'
 
 const placeholder = `
 It can’t help but hear a pin drop from over half a mile away,
@@ -9,7 +11,7 @@ so it lives deep in the mountains where there aren’t many people or Pokémon.
 `
 
 type FaqColumnProps = {
-    gray?: boolean
+  gray?: boolean
 }
 
 export default function FaqColumn(props: FaqColumnProps) {
@@ -18,7 +20,7 @@ export default function FaqColumn(props: FaqColumnProps) {
     <SectionWrapper gray={props.gray}>
       <Grid id="faq-grid" gutter={50} grow>
         <Col span={12} md={6}>
-          <Image src={image.src} alt="Frequently Asked Questions" />
+          <NextImage src={image.src} alt="Frequently Asked Questions" />
         </Col>
         <Col span={12} md={6}>
           <Title order={2} ta="left" className={classes.title}>

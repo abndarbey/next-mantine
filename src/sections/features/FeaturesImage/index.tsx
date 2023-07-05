@@ -1,5 +1,4 @@
 import {
-  Image,
   Title,
   Button,
   Group,
@@ -8,11 +7,13 @@ import {
   ThemeIcon,
   rem,
 } from '@mantine/core'
+import Image from 'next/image'
 import { IconCheck } from '@tabler/icons-react'
 import { featuresImageStylesStyles } from './styles'
 
 import bannerImage from '@/assets/images/hero-banner.svg'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
+import NextImage from '@/components/NextImage'
 
 type FeaturesImageProps = {
   gray?: boolean
@@ -70,7 +71,7 @@ export default function FeaturesImage(props: FeaturesImageProps) {
             </Button>
           </Group>
         </div>
-        <Image width={500} src={bannerImage.src} className={classes.image} alt='img' />
+        <NextImage src={bannerImage.src} className={classes.image} alt='img' />
       </div>
     </SectionWrapper>
   )

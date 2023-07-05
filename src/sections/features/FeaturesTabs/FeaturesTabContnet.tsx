@@ -1,8 +1,8 @@
-import { Image, Accordion, Grid, Col, Title, Text, List, ThemeIcon, rem } from '@mantine/core'
+import { Grid, Col, Title, Text, List, ThemeIcon, rem } from '@mantine/core'
 import { StaticImageData } from 'next/image'
-import SectionWrapper from '@/components/wrappers/SectionWrapper';
-import { tabContentStyles } from './tabContentStyles';
-import { IconCheck } from '@tabler/icons-react';
+import { tabContentStyles } from './tabContentStyles'
+import { IconCheck } from '@tabler/icons-react'
+import NextImage from '@/components/NextImage'
 
 const placeholder = `
 It can’t help but hear a pin drop from over half a mile away,
@@ -20,7 +20,7 @@ export default function FeaturesTabContent(props: FeaturesTabContentProps) {
     <div className={classes.wrapper}>
       <Grid id="faq-grid" gutter={50} grow>
         <Col span={12} md={6}>
-          <Image src={props.image.src} alt="Frequently Asked Questions" />
+          <NextImage src={props.image.src} alt="Frequently Asked Questions" />
         </Col>
         <Col span={12} md={6}>
           <div className={classes.content}>

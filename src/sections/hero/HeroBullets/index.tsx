@@ -1,5 +1,4 @@
 import {
-  Image,
   Container,
   Title,
   Button,
@@ -9,10 +8,12 @@ import {
   ThemeIcon,
   rem,
 } from '@mantine/core'
+import Image from 'next/image'
 import { IconCheck } from '@tabler/icons-react'
 import { heroBulletStyles } from './styles'
 
 import bannerImage from '@/assets/images/hero-banner.svg'
+import NextImage from '@/components/NextImage'
 
 export default function HeroBullets() {
   const { classes } = heroBulletStyles()
@@ -62,7 +63,7 @@ export default function HeroBullets() {
               </Button>
             </Group>
           </div>
-          <Image width={500} src={bannerImage.src} className={classes.image} alt='img' />
+          <NextImage src={bannerImage.src} className={classes.image} alt='img' />
         </div>
       </Container>
     </div>
