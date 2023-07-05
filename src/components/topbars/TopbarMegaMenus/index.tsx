@@ -49,8 +49,7 @@ export default function TopbarMegaMenus() {
               opened={drawerOpened}
               onClick={toggleDrawer}
               className={classes.hiddenDesktop}
-              id='burger-button'
-              aria-label='Burger Button'
+              id='burger-button' aria-label='Burger Button'
             />
             <Logo />
             <NavMenus links={links} />
