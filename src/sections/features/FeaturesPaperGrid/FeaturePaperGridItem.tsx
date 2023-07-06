@@ -9,7 +9,7 @@ export default function FeaturePaperGridItem(props: ArticleCardProps) {
   
   return (
     <div>
-      <Paper key={props.title} radius="xs" component="a" href="#" className={classes.card}>
+      <Paper key={props.title} radius="xs" component="a" href="#" className={classes.paper}>
         <AspectRatio ratio={1920 / 1080}>
           <NextImage src={props.image} alt='img' />
         </AspectRatio>
