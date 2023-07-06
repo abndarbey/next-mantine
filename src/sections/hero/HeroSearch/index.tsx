@@ -1,7 +1,7 @@
-import { Container, Button, Input, Text, Box } from '@mantine/core'
+import { Container, Text, Box } from '@mantine/core'
 import { heroSearchStyles } from './styles'
 import SearchBar from '@/components/SearchBar'
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useTypewriter } from 'react-simple-typewriter'
 import HeroFeatures from '../HeroFeatures'
 
 export default function HeroSearch() {
@@ -19,6 +19,7 @@ export default function HeroSearch() {
           <Text component="span" variant="gradient" gradient={{ from: 'teal', to: 'cyan' }} inherit>
             {text}
           </Text>
+          {/* import Cursor for react-simple-typewriter */}
           {/* <Cursor /> */}
         </h1>
         
