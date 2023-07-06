@@ -15,7 +15,8 @@ export const nestedSidebarStyles = createStyles((theme) => ({
   actionICon: {
     color: theme.colors.dark[0],
     '&:hover': {
-      color: theme.white,
+      color: theme.colors.dark[0],
+      backgroundColor: theme.colors.dark[5],
     },
   },
 
