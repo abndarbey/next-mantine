@@ -9,9 +9,9 @@ type FeaturesPaperGridProps = {
   columns: number
   cardLimit: number
   showSectionHeader?: {
-      superTitle?: string
-      title: string
-      description: string
+    superTitle?: string
+    title: string
+    description: string
   }
   showDescription?: boolean
   cardData: ArticleCardProps[]
