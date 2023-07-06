@@ -1,9 +1,9 @@
-import programmingImg from 'assets/images/programming.svg'
-import designGirlImg from 'assets/images/design-girl.svg'
-import projectManagementImg from 'assets/images/project-management.svg'
-import projectTeamImg from 'assets/images/project-team.svg'
-import testingImg from 'assets/images/testing.svg'
-import supportImg from 'assets/images/support.svg'
+import programmingImg from '@/assets/images/programming.svg'
+import designGirlImg from '@/assets/images/design-girl.svg'
+import projectManagementImg from '@/assets/images/project-management.svg'
+import projectTeamImg from '@/assets/images/project-team.svg'
+import testingImg from '@/assets/images/testing.svg'
+import supportImg from '@/assets/images/support.svg'
 import {
     IconUsers,
     IconBugOff,

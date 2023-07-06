@@ -14,16 +14,20 @@ export const siteConfig = {
       href: '/search',
     },
     {
+      title: 'Services',
+      href: '/services',
+    },
+    {
       title: 'Cover',
       href: '/cover',
     },
     {
-      title: 'Dashboard',
-      href: '/portal',
-    },
-    {
       title: 'Contact',
       href: '/contact',
+    },
+    {
+      title: 'Dashboard',
+      href: '/portal',
     },
   ],
 }

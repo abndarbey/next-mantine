@@ -9,7 +9,7 @@ import {
 }
 from '@tabler/icons-react'
 
-export const serviceHero = {
+export const serviceHeader = {
     title: `Services`,
     description: `
         User research, strategy, design, and engineering.
