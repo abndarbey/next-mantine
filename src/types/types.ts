@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image'
+
 export type PageProps = {
     title?: string
     code?: any
@@ -20,9 +22,8 @@ export type FeatureProps = {
 }
 
 export type ArticleCardProps = {
-    superTitle: string
     title: string
-    description: string
-    image: any
+    image: string | StaticImageData
+    date: string
     showDescription?: boolean
 }

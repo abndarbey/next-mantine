@@ -1,40 +1,17 @@
-import { AspectRatio, Button, Paper, SimpleGrid, Text } from '@mantine/core'
-import { IconArrowNarrowRight } from '@tabler/icons-react'
+import { SimpleGrid } from '@mantine/core'
 import SectionHeader from '@/components/SectionHeader'
 import { mockdata } from './data'
-import { useStyles } from './styles'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
-import NextImage from '@/components/NextImage'
+import FeaturePaperGridCard from './FeaturePaperGridCard'
 
 type FeaturesPaperGridProps = {
   gray?: boolean
 }
 
 export default function FeaturesPaperGrid(props: FeaturesPaperGridProps) {
-  const { classes } = useStyles()
-
-  const cards = mockdata.map((article, index) => (
-    <div key={index}>
-      <Paper key={article.title} radius="xs" component="a" href="#" className={classes.card}>
-        <AspectRatio ratio={1920 / 1080}>
-          <NextImage src={article.image} alt='img' />
-        </AspectRatio>
-      </Paper>
-      <Text size="xs" transform="uppercase" weight={700} mt="md">
-        {article.date}
-      </Text>
-      <Text className={classes.title} mt={5}>
-        {article.title}
-      </Text>
-      <Button
-        my='md'
-        variant='subtle'
-        rightIcon={<IconArrowNarrowRight />}
-      >
-        Learn More
-      </Button>
-    </div>
-  ))
+  const cards = mockdata?.map(
+    (item, index) => <FeaturePaperGridCard {...item} key={index} />
+  )
 
   return (
     <SectionWrapper gray={props.gray}>
