@@ -14,7 +14,6 @@ const Seperator = dynamic(() => import('@/components/Seperator'))
 
 
 import {
-  homeHero,
   homeFeatureGrid,
   homeFeatureCards,
   homeCaseStudiesData,
@@ -32,7 +31,7 @@ export default function HomePage() {
       <FeaturesColumn />
       <FeaturesImage gray />
       <FeaturesTabs />
-      <FeaturesPaperGrid gray />
+      <FeaturesPaperGrid gray {...homeCaseStudiesData} />
       <FaqColumn />
       <CtaForm />
     </>

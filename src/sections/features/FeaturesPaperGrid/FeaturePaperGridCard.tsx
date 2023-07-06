@@ -6,6 +6,7 @@ import { ArticleCardProps } from '@/types/types'
 
 export default function FeaturePaperGridCard(props: ArticleCardProps) {
   const { classes } = useStyles()
+  
   return (
     <div>
       <Paper key={props.title} radius="xs" component="a" href="#" className={classes.card}>
@@ -14,7 +15,7 @@ export default function FeaturePaperGridCard(props: ArticleCardProps) {
         </AspectRatio>
       </Paper>
       <Text size="xs" transform="uppercase" weight={700} mt="md">
-        {props.date}
+        {props.superTitle}
       </Text>
       <Text className={classes.title} mt={5}>
         {props.title}

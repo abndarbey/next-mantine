@@ -9,6 +9,10 @@ const FaqColumn = dynamic(() => import('@/sections/faqs/FaqColumn'))
 const FeaturesPaperGrid = dynamic(() => import('@/sections/features/FeaturesPaperGrid'))
 const CtaForm = dynamic(() => import('@/sections/cta/CtaForm'))
 
+import {
+  homeCaseStudiesData,
+} from '@/data/homepageData'
+
 export default function SearchPage() {
   return (
     <>
@@ -17,7 +21,7 @@ export default function SearchPage() {
       <FeaturesColumn />
       <FeaturesImage gray />
       <FeaturesTabs />
-      <FeaturesPaperGrid gray />
+      <FeaturesPaperGrid gray {...homeCaseStudiesData} />
       <FaqColumn />
       <CtaForm />
     </>

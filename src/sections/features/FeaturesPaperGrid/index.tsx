@@ -1,15 +1,24 @@
 import { SimpleGrid } from '@mantine/core'
 import SectionHeader from '@/components/SectionHeader'
-import { mockdata } from './data'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import FeaturePaperGridCard from './FeaturePaperGridCard'
+import { ArticleCardProps } from '@/types/types'
 
 type FeaturesPaperGridProps = {
   gray?: boolean
+  columns: number
+  cardLimit: number
+  showSectionHeader?: {
+      superTitle?: string
+      title: string
+      description: string
+  }
+  showDescription?: boolean
+  cardData: ArticleCardProps[]
 }
 
 export default function FeaturesPaperGrid(props: FeaturesPaperGridProps) {
-  const cards = mockdata?.map(
+  const cards = props.cardData?.map(
     (item, index) => <FeaturePaperGridCard {...item} key={index} />
   )
 

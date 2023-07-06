@@ -22,8 +22,9 @@ export type FeatureProps = {
 }
 
 export type ArticleCardProps = {
+    superTitle: string
     title: string
+    description: string
     image: string | StaticImageData
-    date: string
     showDescription?: boolean
 }
