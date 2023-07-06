@@ -4,7 +4,7 @@ import { IconArrowNarrowRight } from '@tabler/icons-react'
 import { useStyles } from './styles'
 import { ArticleCardProps } from '@/types/types'
 
-export default function FeaturePaperGridCard(props: ArticleCardProps) {
+export default function FeaturePaperGridItem(props: ArticleCardProps) {
   const { classes } = useStyles()
   
   return (

@@ -1,7 +1,7 @@
 import { SimpleGrid } from '@mantine/core'
 import SectionHeader from '@/components/SectionHeader'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
-import FeaturePaperGridCard from './FeaturePaperGridCard'
+import FeaturePaperGridItem from './FeaturePaperGridItem'
 import { ArticleCardProps } from '@/types/types'
 
 type FeaturesPaperGridProps = {
@@ -19,7 +19,7 @@ type FeaturesPaperGridProps = {
 
 export default function FeaturesPaperGrid(props: FeaturesPaperGridProps) {
   const cards = props.cardData?.map(
-    (item, index) => <FeaturePaperGridCard {...item} key={index} />
+    (item, index) => <FeaturePaperGridItem {...item} key={index} />
   )
 
   return (
