@@ -16,7 +16,7 @@ type FeaturesGridProps = {
 
 export default function FeaturesGrid(props: FeaturesGridProps) {
   const { theme } = featuresGridStyles()
-  const features = props.data?.map((item, index) => <FeatureGridCard {...item} key={index} />);
+  const features = props.data?.map((item, index) => <FeatureGridCard {...item} key={index} />)
 
   return (
     <SectionWrapper gray={props.gray}>
