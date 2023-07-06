@@ -1,8 +1,6 @@
 import { AspectRatio, Button, Paper, SimpleGrid, Text } from '@mantine/core'
-import Image from 'next/image'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 import SectionHeader from '@/components/SectionHeader'
-import HighlightSectionWrapper from '@/components/wrappers/HighlightSectionWrapper'
 import { mockdata } from './data'
 import { useStyles } from './styles'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
