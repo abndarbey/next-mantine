@@ -3,6 +3,7 @@ import { featuresColumnStyles } from './styles'
 import { features } from './data'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import { gradientRadial } from '@/styles/constants'
+import FeatureColumnItem from './FeatureColumnItem'
 
 type FeaturesColumnProps = {
   gray?: boolean
@@ -10,25 +11,7 @@ type FeaturesColumnProps = {
 
 export default function FeaturesColumn(props: FeaturesColumnProps) {
   const { classes } = featuresColumnStyles()
-
-  const items = features.map((feature) => (
-    <div key={feature.title}>
-      <ThemeIcon
-        size={44}
-        radius="md"
-        variant="gradient"
-        gradient={gradientRadial}
-      >
-        <feature.icon size={26} stroke={1.5} />
-      </ThemeIcon>
-      <Text size="lg" mt="sm" weight={500}>
-        {feature.title}
-      </Text>
-      <Text color="dimmed" size="sm">
-        {feature.description}
-      </Text>
-    </div>
-  ))
+  const items = features?.map((item, index) => <FeatureColumnItem {...item} key={index} />)
 
   return (
     <SectionWrapper gray={props.gray}>
