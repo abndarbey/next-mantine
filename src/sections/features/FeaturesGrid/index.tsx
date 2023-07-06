@@ -2,7 +2,7 @@ import { SimpleGrid } from '@mantine/core'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import SectionHeader from '@/components/SectionHeader'
 import { FeatureProps } from '@/types/types'
-import { FeatureGridCard } from './FeatureGridCard'
+import { FeatureGridItem } from './FeatureGridItem'
 import { featuresGridStyles } from './styles'
 
 type FeaturesGridProps = {
@@ -16,7 +16,7 @@ type FeaturesGridProps = {
 
 export default function FeaturesGrid(props: FeaturesGridProps) {
   const { theme } = featuresGridStyles()
-  const features = props.data?.map((item, index) => <FeatureGridCard {...item} key={index} />)
+  const items = props.data?.map((item, index) => <FeatureGridItem {...item} key={index} />)
 
   return (
     <SectionWrapper gray={props.gray}>
@@ -29,7 +29,7 @@ export default function FeaturesGrid(props: FeaturesGridProps) {
           { maxWidth: 755, cols: 1, spacing: 'xl' },
         ]}
       >
-        {features}
+        {items}
       </SimpleGrid>
     </SectionWrapper>
   )

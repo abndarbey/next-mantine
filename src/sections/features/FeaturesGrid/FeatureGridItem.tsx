@@ -2,7 +2,7 @@ import { gradientRadial } from "@/styles/constants"
 import { FeatureProps } from "@/types/types"
 import { Text, ThemeIcon, useMantineTheme } from "@mantine/core"
 
-export function FeatureGridCard({ icon: Icon, title, description }: FeatureProps) {
+export function FeatureGridItem({ icon: Icon, title, description }: FeatureProps) {
   const theme = useMantineTheme()
   return (
     <div>
