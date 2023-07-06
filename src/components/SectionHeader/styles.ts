@@ -2,7 +2,7 @@ import { createStyles } from "@mantine/core"
 
 export const sectionHeaderStyles = createStyles((theme) => ({
   supTitle: {
-    textAlign: 'center',
+    // textAlign: 'center',
     textTransform: 'uppercase',
     fontWeight: 800,
     fontSize: theme.fontSizes.sm,
@@ -38,9 +38,9 @@ export const sectionHeaderStyles = createStyles((theme) => ({
     content: '""',
     display: 'block',
     backgroundColor: theme.fn.primaryColor(),
-    width: 45,
+    width: 90,
     height: 2,
-    marginTop: theme.spacing.sm,
+    marginTop: theme.spacing.xl,
     marginLeft: 'auto',
     marginRight: 'auto',
   }

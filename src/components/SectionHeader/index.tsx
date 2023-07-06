@@ -9,12 +9,14 @@ type SectionHeaderProps = {
 }
 
 export default function SectionHeader(props: SectionHeaderProps) {
-  const { classes, theme } = sectionHeaderStyles()
+  const { classes } = sectionHeaderStyles()
     
   return (
     <Box pb={50}>
       {props.superTitle &&
-        <Text className={classes.supTitle}>{props.superTitle}</Text>
+        <Text className={classes.supTitle} align="center">
+          {props.superTitle}
+        </Text>
       }
 
       <Title order={2} className={classes.title} align="center" mt="sm">
