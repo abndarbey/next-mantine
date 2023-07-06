@@ -17,14 +17,6 @@ export const ctaStyles = createStyles((theme) => ({
     },
   },
 
-  image: {
-    maxWidth: '40%',
-
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-      maxWidth: '100%',
-    },
-  },
-
   body: {
     paddingRight: `calc(${theme.spacing.xl} * 4)`,
 

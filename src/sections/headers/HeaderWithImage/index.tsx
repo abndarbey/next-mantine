@@ -1,5 +1,4 @@
 import {
-  Image,
   Title,
   Text,
   SimpleGrid,
@@ -7,6 +6,7 @@ import {
 import { Dots } from '@/components/Dots'
 import { heroHeaderStyles } from './styles'
 import HeaderWrapper from '@/components/wrappers/HeaderWrapper'
+import NextImage from '@/components/NextImage'
 
 interface HeroHeaderProps {
   title: string
@@ -30,7 +30,7 @@ export default function HeaderWithImage(props: HeroHeaderProps) {
           </Title>
           <Text mt="md">{props.description}</Text>
         </div>
-        <Image src={props.image.src} className={classes.image} alt="img" />
+        <NextImage src={props.image.src} alt="img" />
       </SimpleGrid>
     </HeaderWrapper>
   )

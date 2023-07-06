@@ -49,14 +49,6 @@ export const heroHeaderStyles = createStyles((theme) => ({
     },
   },
 
-  image: {
-    maxWidth: '40%',
-    
-    [theme.fn.smallerThan('md')]: {
-      display: 'none',
-    },
-  },
-
   highlight: {
     position: 'relative',
     backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
