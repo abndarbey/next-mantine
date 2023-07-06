@@ -4,6 +4,7 @@ import SearchBar from '@/components/SearchBar'
 import { useTypewriter } from 'react-simple-typewriter'
 import HeroFeatures from '../HeroFeatures'
 import { gradientLiner } from '@/styles/constants'
+import HeroWrapper from '@/components/wrappers/HeroWrapper'
 
 export default function HeroSearch() {
   const { classes } = heroSearchStyles()
@@ -13,7 +14,7 @@ export default function HeroSearch() {
   })
 
   return (
-    <div className={classes.wrapper}>
+    <HeroWrapper>
       <Container size='xl' className={classes.inner}>
         <h1 className={classes.title}>
           Search{' '}
@@ -29,6 +30,6 @@ export default function HeroSearch() {
           <HeroFeatures />
         </Box>
       </Container>
-    </div>
+    </HeroWrapper>
   )
 }

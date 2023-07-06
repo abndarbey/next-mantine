@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import HeroFeatures from '@/sections/hero/HeroFeatures'
 import Link from 'next/link'
 import { gradientLiner } from '@/styles/constants'
+import HeroWrapper from '@/components/wrappers/HeroWrapper'
 
 const description = `
   Powered by Ethereum Blockchain, the Nexport Platform provides every entity involved
@@ -16,7 +17,7 @@ export default function HeroTitle() {
   const router = useRouter()
 
   return (
-    <div className={classes.wrapper}>
+    <HeroWrapper>
       <Container size='xl' className={classes.inner}>
         <h1 className={classes.title}>
           A{' '}
@@ -56,6 +57,6 @@ export default function HeroTitle() {
           </Button>
         </Group>
       </Container>
-    </div>
+    </HeroWrapper>
   )
 }
