@@ -2,6 +2,7 @@ import { Title, SimpleGrid, Text, Button, ThemeIcon, Grid, Col, Container } from
 import { featuresColumnStyles } from './styles'
 import { features } from './data'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
+import { gradientRadial } from '@/styles/constants'
 
 type FeaturesColumnProps = {
   gray?: boolean
@@ -16,7 +17,7 @@ export default function FeaturesColumn(props: FeaturesColumnProps) {
         size={44}
         radius="md"
         variant="gradient"
-        gradient={{ deg: 133, from: 'teal', to: 'cyan' }}
+        gradient={gradientRadial}
       >
         <feature.icon size={26} stroke={1.5} />
       </ThemeIcon>
@@ -42,7 +43,7 @@ export default function FeaturesColumn(props: FeaturesColumnProps) {
 
           <Button
               variant="gradient"
-              gradient={{ deg: 133, from: 'teal', to: 'cyan' }}
+              gradient={gradientRadial}
               size="lg"
               mt="xl"
           >

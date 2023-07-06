@@ -4,6 +4,7 @@ import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import { ctaStyles } from './styles'
 import emailImg from '@/assets/images/email.svg'
 import NextImage from '@/components/NextImage'
+import { gradientLiner } from '@/styles/constants'
 
 type CtaFormProps = {
   gray?: boolean
@@ -28,7 +29,7 @@ export default function CtaForm(props: CtaFormProps) {
             <Button
               className={classes.control}
               variant='gradient'
-              gradient={{from: 'teal', to: 'cyan'}}
+              gradient={gradientLiner}
             >
               Submit
             </Button>

@@ -4,6 +4,7 @@ import { IconArrowNarrowRight } from '@tabler/icons-react'
 import { useRouter } from 'next/router'
 import HeroFeatures from '@/sections/hero/HeroFeatures'
 import Link from 'next/link'
+import { gradientLiner } from '@/styles/constants'
 
 const description = `
   Powered by Ethereum Blockchain, the Nexport Platform provides every entity involved
@@ -19,7 +20,7 @@ export default function HeroTitle() {
       <Container size='xl' className={classes.inner}>
         <h1 className={classes.title}>
           A{' '}
-          <Text component="span" variant="gradient" gradient={{ from: 'teal', to: 'cyan' }} inherit>
+          <Text component="span" variant="gradient" gradient={gradientLiner} inherit>
             Smarter
           </Text>{' '}
           way to engage in trade
@@ -38,7 +39,7 @@ export default function HeroTitle() {
             className={classes.control}
             size="xl"
             variant="gradient"
-            gradient={{ from: 'teal', to: 'cyan' }}
+            gradient={gradientLiner}
             rightIcon={<IconArrowNarrowRight />}
           >
             Explore More

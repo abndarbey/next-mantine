@@ -1,6 +1,7 @@
 import { Button, MantineSize, MantineNumberSize, TextInput } from '@mantine/core'
 import { IconSearch } from '@tabler/icons-react'
 import { searchBarStyles } from './styles'
+import { gradientLiner } from '@/styles/constants'
 
 type SearchBarProps = {
   size: MantineSize
@@ -24,7 +25,7 @@ export default function SearchBar(props: SearchBarProps) {
         size={props.size}
         radius={radius}
         variant="gradient"
-        gradient={{ from: 'teal', to: 'cyan' }}
+        gradient={gradientLiner}
         onClick={props.handleClick}
       >
         <IconSearch />

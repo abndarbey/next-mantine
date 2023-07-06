@@ -14,6 +14,7 @@ import { featuresImageStylesStyles } from './styles'
 import bannerImage from '@/assets/images/hero-banner.svg'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import NextImage from '@/components/NextImage'
+import { gradientLiner } from '@/styles/constants'
 
 type FeaturesImageProps = {
   gray?: boolean
@@ -62,7 +63,7 @@ export default function FeaturesImage(props: FeaturesImageProps) {
               className={classes.control}
               size="md"
               variant='gradient'
-              gradient={{ from: 'teal', to: 'cyan' }}
+              gradient={gradientLiner}
             >
               Get started
             </Button>

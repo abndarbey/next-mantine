@@ -2,6 +2,7 @@ import { Button, Group } from '@mantine/core'
 import { topbarStyles } from './styles'
 import { useRouter } from 'next/router'
 import { Fragment } from 'react'
+import { gradientLiner } from '@/styles/constants'
 
 export default function NavActionButtons() {
   const router = useRouter()
@@ -20,7 +21,7 @@ export default function NavActionButtons() {
       </Button>
       <Button
         variant='gradient'
-        gradient={{from: 'teal', to: 'cyan'}}
+        gradient={gradientLiner}
       >
         Sign up
       </Button>

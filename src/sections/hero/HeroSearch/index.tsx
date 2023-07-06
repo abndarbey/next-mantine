@@ -3,6 +3,7 @@ import { heroSearchStyles } from './styles'
 import SearchBar from '@/components/SearchBar'
 import { useTypewriter } from 'react-simple-typewriter'
 import HeroFeatures from '../HeroFeatures'
+import { gradientLiner } from '@/styles/constants'
 
 export default function HeroSearch() {
   const { classes } = heroSearchStyles()
@@ -16,7 +17,7 @@ export default function HeroSearch() {
       <Container size='xl' className={classes.inner}>
         <h1 className={classes.title}>
           Search{' '}
-          <Text component="span" variant="gradient" gradient={{ from: 'teal', to: 'cyan' }} inherit>
+          <Text component="span" variant="gradient" gradient={gradientLiner} inherit>
             {text}
           </Text>
           {/* import Cursor for react-simple-typewriter */}
