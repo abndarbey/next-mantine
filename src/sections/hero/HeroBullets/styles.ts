@@ -1,16 +1,17 @@
 import { createStyles, rem } from "@mantine/styles"
 
 export const heroBulletStyles = createStyles((theme) => ({
-  wrapper: {
-    position: 'relative',
-    boxSizing: 'border-box',
-  },
-  
   inner: {
     display: 'flex',
     justifyContent: 'space-between',
-    paddingTop: rem(150),
-    paddingBottom: rem(150),
+    alignItems: 'center',
+    paddingTop: rem(200),
+    paddingBottom: rem(200),
+
+    [theme.fn.smallerThan('sm')]: {
+      paddingBottom: rem(80),
+      paddingTop: rem(80),
+    },
   },
 
   content: {
