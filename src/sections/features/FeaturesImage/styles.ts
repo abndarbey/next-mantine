@@ -1,11 +1,6 @@
 import { createStyles, rem } from "@mantine/styles"
 
 export const featuresImageStylesStyles = createStyles((theme) => ({
-  wrapper: {
-    position: 'relative',
-    boxSizing: 'border-box',
-  },
-  
   inner: {
     display: 'flex',
     justifyContent: 'space-between',
