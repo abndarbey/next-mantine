@@ -27,7 +27,7 @@ export default function FeaturesPaperGrid(props: FeaturesPaperGridProps) {
       <SectionHeader
         title='Discover how Nexport solutions can work for you'
       />
-      <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+      <SimpleGrid cols={3} breakpoints={[{ maxWidth: 'md', cols: 2 }, { maxWidth: 'sm', cols: 1 }]}>
         {cards}
       </SimpleGrid>
     </SectionWrapper>
