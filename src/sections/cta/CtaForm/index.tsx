@@ -38,7 +38,7 @@ export default function CtaForm(props: CtaFormProps) {
             </Button>
           </div>
         </div>
-        <div>
+        <div className={classes.image}>
           <NextImage src={emailImg.src} alt="img" />
         </div>
       </SimpleGrid>

@@ -20,7 +20,7 @@ export const ctaStyles = createStyles((theme) => ({
   body: {
     paddingRight: `calc(${theme.spacing.xl} * 4)`,
 
-    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+    [theme.fn.smallerThan('sm')]: {
       paddingRight: 0,
       marginTop: theme.spacing.xl,
     },
@@ -40,7 +40,7 @@ export const ctaStyles = createStyles((theme) => ({
 
   inputWrapper: {
     width: '100%',
-    flex: '1',
+    flex: 1,
   },
 
   input: {
@@ -55,10 +55,11 @@ export const ctaStyles = createStyles((theme) => ({
   },
   
   image: {
-    maxWidth: '40%',
+    maxWidth: '50%',
 
     [theme.fn.smallerThan('sm')]: {
-      maxWidth: '100%',
+      width: 0,
+      display: 'none',
     },
   },
 }))
