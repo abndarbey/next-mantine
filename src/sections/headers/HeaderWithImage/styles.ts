@@ -11,8 +11,12 @@ export const heroHeaderStyles = createStyles((theme) => ({
     position: 'absolute',
     color: theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1],
 
+    [theme.fn.smallerThan('xl')]: {
+      zIndex: -1,
+    },
+
     '@media (max-width: 755px)': {
-    display: 'none',
+      display: 'none',
     },
   },
 
