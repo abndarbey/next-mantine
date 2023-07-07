@@ -9,15 +9,17 @@ const FeaturesImage = dynamic(() => import('@/sections/features/FeaturesImage'))
 const FeaturesTabs = dynamic(() => import('@/sections/features/FeaturesTabs'))
 const FaqColumn = dynamic(() => import('@/sections/faqs/FaqColumn'))
 const FeaturesPaperGrid = dynamic(() => import('@/sections/features/FeaturesPaperGrid'))
+const FeaturesCardImages = dynamic(() => import ('@/sections/features/FeaturesCardImages'))
 const CtaForm = dynamic(() => import('@/sections/cta/CtaForm'))
 const Seperator = dynamic(() => import('@/components/Seperator'))
-
 
 import {
   homeFeatureGrid,
   homeFeatureCards,
   homeCaseStudiesData,
 } from '@/data/homepageData'
+
+import { challengesItems } from '@/data/challengesData'
 
 export default function HomePage() {
   return (
@@ -27,8 +29,8 @@ export default function HomePage() {
       <FeaturesGrid {...homeFeatureGrid} />
       <Seperator />
       <FeatureCards {...homeFeatureCards} />
-      <Seperator />
-      <FeaturesColumn />
+      <FeaturesColumn gray />
+      <FeaturesCardImages {...challengesItems} />
       <FeaturesImage gray />
       <FeaturesTabs />
       <FeaturesPaperGrid gray {...homeCaseStudiesData} />
