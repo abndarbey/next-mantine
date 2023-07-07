@@ -4,7 +4,6 @@ import { useNextImageStyles } from './styles'
 type NextImageProps = {
     src: StaticImageData | string
     alt: string
-    className?: string
 }
 
 export default function NextImage(props: NextImageProps) {
