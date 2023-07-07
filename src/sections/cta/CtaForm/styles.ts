@@ -53,4 +53,12 @@ export const ctaStyles = createStyles((theme) => ({
     borderTopLeftRadius: 0,
     borderBottomLeftRadius: 0,
   },
+  
+  image: {
+    maxWidth: '40%',
+
+    [theme.fn.smallerThan('sm')]: {
+      maxWidth: '100%',
+    },
+  },
 }))

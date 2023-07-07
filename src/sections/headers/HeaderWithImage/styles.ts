@@ -55,4 +55,12 @@ export const heroHeaderStyles = createStyles((theme) => ({
     borderRadius: theme.radius.sm,
     padding: '4px 12px',
   },
+
+  image: {
+    flex: 1,
+
+    [theme.fn.smallerThan('md')]: {
+      display: 'none',
+    },
+  },
 }))

@@ -30,7 +30,9 @@ export default function HeaderWithImage(props: HeroHeaderProps) {
           </Title>
           <Text mt="md">{props.description}</Text>
         </div>
-        <NextImage src={props.image.src} alt="img" />
+        <div className={classes.image}>
+          <NextImage src={props.image.src} alt="img" />
+        </div>
       </SimpleGrid>
     </HeaderWrapper>
   )

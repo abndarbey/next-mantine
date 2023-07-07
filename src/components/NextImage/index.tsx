@@ -1,4 +1,3 @@
-import { useMantineTheme } from '@mantine/styles'
 import Image, { StaticImageData } from 'next/image'
 import { useNextImageStyles } from './styles'
 
@@ -18,9 +17,8 @@ export default function NextImage(props: NextImageProps) {
       <Image
         src={props.src}
         alt={props.alt}
-        width={500}
-        height={500}
-        className={props.className}
+        width={size}
+        height={size}
         style={{ width: '100%', height: 'auto' }}
       />
     </div> 

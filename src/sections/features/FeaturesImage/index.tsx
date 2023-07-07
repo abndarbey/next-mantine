@@ -7,7 +7,6 @@ import {
   ThemeIcon,
   rem,
 } from '@mantine/core'
-import Image from 'next/image'
 import { IconCheck } from '@tabler/icons-react'
 import { featuresImageStylesStyles } from './styles'
 
@@ -72,7 +71,9 @@ export default function FeaturesImage(props: FeaturesImageProps) {
             </Button>
           </Group>
         </div>
-        <NextImage src={bannerImage.src} className={classes.image} alt='img' />
+        <div className={classes.image}>
+          <NextImage src={bannerImage.src} alt='img' />
+        </div>
       </div>
     </SectionWrapper>
   )

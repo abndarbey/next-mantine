@@ -1,4 +1,4 @@
-import { Title, TextInput, Button } from '@mantine/core'
+import { Title, TextInput, Button, SimpleGrid } from '@mantine/core'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import { ctaStyles } from './styles'
 import emailImg from '@/assets/images/email.svg'
@@ -14,7 +14,11 @@ export default function CtaForm(props: CtaFormProps) {
   
   return (
     <SectionWrapper gray={props.gray}>
-      <div className={classes.wrapper}>
+      <SimpleGrid
+        cols={2}
+        className={classes.wrapper}
+        breakpoints={[{ maxWidth: 'md', cols: 1 }]}
+      >
         <div className={classes.body}>
           <Title className={classes.title}>
             Drop your email and we will get back to you.
@@ -34,8 +38,10 @@ export default function CtaForm(props: CtaFormProps) {
             </Button>
           </div>
         </div>
-        <NextImage src={emailImg.src} alt="img" />
-      </div>
+        <div>
+          <NextImage src={emailImg.src} alt="img" />
+        </div>
+      </SimpleGrid>
     </SectionWrapper>
   )
 }
