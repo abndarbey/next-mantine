@@ -15,7 +15,8 @@ export const heroHeaderStyles = createStyles((theme) => ({
       zIndex: -1,
     },
 
-    '@media (max-width: 755px)': {
+    [theme.fn.smallerThan('sm')]: {
+      zIndex: -1,
       display: 'none',
     },
   },
