@@ -2,9 +2,9 @@ import { SimpleGrid } from '@mantine/core'
 import SectionWrapper from '@/components/wrappers/SectionWrapper'
 import SectionHeader from '@/components/SectionHeader'
 import { FeatureProps } from '@/types/types'
-import FeatureCardItem from './FeatureCardItem'
+import FeatureCardImageItem from './FeatureCardImageItem'
 
-interface FeatureCardProps {
+interface FeaturesCardImagesProps {
   gray?: boolean
   columns: number
   superTitle?: string
@@ -13,9 +13,9 @@ interface FeatureCardProps {
   cardData: FeatureProps[]
 }
 
-export default function FeatureCards(props: FeatureCardProps) {
+export default function FeaturesCardImages(props: FeaturesCardImagesProps) {
   const featureCards = props.cardData.map((item, key) => (
-    <FeatureCardItem key={key} {...item} />
+    <FeatureCardImageItem key={key} {...item} />
   ))
     
   return (
